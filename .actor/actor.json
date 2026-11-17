@@ -8,6 +8,7 @@
     "templateId": "project_empty"
   },
   "dockerfile": "./Dockerfile",
+  "output": "./output_schema.json",
   "categories": [
     "LEAD_GENERATION",
     "BUSINESS"
