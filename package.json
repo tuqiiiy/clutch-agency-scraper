@@ -1,0 +1,18 @@
+{
+  "name": "clutch-agency-scraper",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "High-speed Clutch.co B2B Agency & Lead Scraper. Extract verified digital marketing, web dev, SEO, and AI agencies with direct websites, phone numbers, hourly rates, project sizes, and addresses.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js"
+  },
+  "author": "tuqiiiy",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "apify": "^3.2.6",
+    "cheerio": "^1.0.0",
+    "crawlee": "^3.12.2",
+    "got-scraping": "^4.0.7"
+  }
+}

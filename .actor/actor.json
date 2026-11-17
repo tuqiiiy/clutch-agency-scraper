@@ -1,0 +1,55 @@
+{
+  "actorSpecification": 1,
+  "name": "clutch-agency-scraper",
+  "title": "Clutch.co B2B Agency & Lead Scraper (Direct Phone & Website)",
+  "description": "Extract verified B2B agencies from Clutch.co with direct company websites, phone numbers, hourly rates, minimum project budgets, employee sizes, and addresses. Ideal for B2B outreach and sales prospecting.",
+  "version": "1.0",
+  "meta": {
+    "templateId": "project_empty"
+  },
+  "dockerfile": "./Dockerfile",
+  "categories": [
+    "LEAD_GENERATION",
+    "BUSINESS"
+  ],
+  "storages": {
+    "dataset": {
+      "actorSpecification": 1,
+      "title": "Clutch Agencies Dataset",
+      "views": {
+        "overview": {
+          "title": "Overview",
+          "transformation": {
+            "fields": [
+              "companyName",
+              "website",
+              "phone",
+              "hourlyRate",
+              "minProjectSize",
+              "employees",
+              "rating",
+              "reviewsCount",
+              "location",
+              "verificationStatus"
+            ]
+          },
+          "display": {
+            "component": "table",
+            "columns": {
+              "companyName": { "label": "Company Name" },
+              "website": { "label": "Website" },
+              "phone": { "label": "Phone" },
+              "hourlyRate": { "label": "Hourly Rate" },
+              "minProjectSize": { "label": "Min Project Size" },
+              "employees": { "label": "Employees" },
+              "rating": { "label": "Rating" },
+              "reviewsCount": { "label": "Reviews" },
+              "location": { "label": "Location" },
+              "verificationStatus": { "label": "Verified" }
+            }
+          }
+        }
+      }
+    }
+  }
+}
